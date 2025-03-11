@@ -1,0 +1,97 @@
+/* Global Styling */
+html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d0f0f0;
+    margin: 0;
+}
+
+/* Grid Container */
+#grid {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "nav header header"
+        "nav main aside"
+        "footer footer footer";
+    gap: 10px;
+    padding: 10px;
+}
+
+/* General Box Styling */
+.box {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Header Section */
+.header {
+    grid-area: header;
+    background-color: #a0d0d0;
+    color: #505050;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    text-shadow: 1px 1px 2px #707070;
+}
+
+/* Navigation Sidebar */
+.nav {
+    grid-area: nav;
+    background-color: #c0e0e0;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-bottom: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    background-color: #e0f0f0;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* Main Content */
+.main {
+    grid-area: main;
+    background-color: #e0f0f0;
+}
+
+.main h2 {
+    color: #a050a0;
+}
+
+.main p {
+    margin-top: 10px;
+}
+
+/* Aside Section */
+.aside {
+    grid-area: aside;
+    background-color: #e0f0f0;
+}
+
+/* Footer Section */
+.footer {
+    grid-area: footer;
+    background-color: #a0d0d0;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #505050;
+}
